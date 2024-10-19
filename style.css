@@ -1,0 +1,52 @@
+.container
+{
+    background-image: url(https://images.unsplash.com/photo-1676130813640-b636e2f3845c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8);
+    display:flex;
+    height: 100vh;
+    position: absolute;
+    background-position: fixed;
+    width: 60rem
+}
+.container footer{
+    position: absolute;
+    bottom: 0;
+    color: blue;
+    align-self: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.header{
+    position:absolute;
+    right: 50px;
+    top: 10%;
+}
+.FirstName{
+    position: absolute;
+    right: 35%;
+    top: 50%;
+}
+.LastName{
+    position: absolute;
+    right: 20%;
+    top: 50%;
+}
+.Email{
+    position: absolute;
+    right: 35%;
+    top: 55%;
+}
+.PhoneNumber{
+    position: absolute;
+    right: 20%;
+    top: 55%;
+}
+.Password{
+    position: absolute;
+    right: 35%;
+    top: 60%;
+}
+.ConfirmPassword{
+    position: absolute;
+    right: 20%;
+    top: 60%;
+}
