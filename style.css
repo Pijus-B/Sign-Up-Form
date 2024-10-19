@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "norse";
+    src:
+        url("./public/Norse-Bold.otf"),
+        format("opentype");
+}
 .container
 {
     background-image: url(https://images.unsplash.com/photo-1676130813640-b636e2f3845c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8);
@@ -8,45 +16,140 @@
     width: 60rem
 }
 .container footer{
-    position: absolute;
-    bottom: 0;
     color: blue;
     align-self: center;
     font-weight: bold;
     font-size: 25px;
+    margin-top: 80%;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+label {
+    font-size: .75rem;
+    letter-spacing: 0.1rem;
+}
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=password] {
+    font-size: 1rem;
+    padding: 5px;
+    width: 30ch;
+    border: none;
+    border: 2px solid #E5E7EB;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=password]:focus {
+    outline: none;
+    border: 2px solid #7c98e8;
+    box-shadow: 2px 2px 5px #7c98e8;
+}
+input[type=text]:valid,
+input[type=email]:valid,
+input[type=tel]:valid,
+input[type=password]:valid {
+    outline: none;
+    border: 2px solid #73961d;
+    box-shadow: 2px 2px 5px #73961d;
+}
+input[type=text]:invalid,
+input[type=email]:invalid,
+input[type=tel]:invalid,
+input[type=password]:invalid {
+    outline: none;
+    border: 2px solid #bd2727;
+    box-shadow: 2px 2px 5px #bd2727;
+}
+
+
 .header{
     position:absolute;
-    right: 50px;
+    right: 120px;
     top: 10%;
+    max-width: 40%;
 }
 .FirstName{
     position: absolute;
-    right: 35%;
-    top: 50%;
+    margin-bottom:10px;
+    right: 32%;
+    top: 49%;
 }
 .LastName{
     position: absolute;
-    right: 20%;
-    top: 50%;
+    margin-bottom:20px;
+    right: 16%;
+    top: 49%;
 }
 .Email{
     position: absolute;
-    right: 35%;
+    right: 32%;
     top: 55%;
 }
 .PhoneNumber{
     position: absolute;
-    right: 20%;
+    right: 16%;
     top: 55%;
 }
 .Password{
     position: absolute;
-    right: 35%;
+    right: 32%;
+    margin-top:10px;
     top: 60%;
 }
 .ConfirmPassword{
     position: absolute;
-    right: 20%;
+    margin-top:10px;
+    right: 16%;
     top: 60%;
+}
+ label, input{
+    display:flex;
+    justify-items: column;
+  }
+  
+
+.button {
+    position: absolute;
+    right: 37%;
+    top: 70%;
+    background: linear-gradient(135deg, #FF4742, #FF6B6B); /* Gradient effect */
+    border: none; /* Remove border */
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px; /* Slightly larger shadow for a "floating" effect */
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: 'Nunito', 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 29px; /* Increase padding for a larger button */
+    text-align: center;
+    transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #FF6B6B, #FF4742); /* Reverse gradient on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Smaller scaling effect on click */
+    opacity: 0.8; /* Slight transparency on click */
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 71, 66, 0.5); /* Focus ring for accessibility */
+}
+.bot{
+    position: absolute;
+    right: 36%;
+    top: 74%;
 }
